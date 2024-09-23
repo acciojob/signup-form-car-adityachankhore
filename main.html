@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-</body>
+
 <form action="/submit" method="post">
 	<label for="name">Name:</label>
 	<input id="name" placeholder="Name" name="Name" type="text" required>
@@ -23,13 +23,13 @@
 
 	<label>Gender:</label>
 	<label for="gender_m">Male</label>
-	<input type="radio" id="gender_m" value="male" required>
+	<input type="radio" id="gender_m" value="male" name="gender_m" required>
 	<label for="gender_f">Female</label>
-	<input type="radio" id="gender_f" value="female" required>
+	<input type="radio" id="gender_f" value="female" name="gender_f" required>
 		
 	<br><br>
     <label for="cars">Car Brands:</label>
-	<select id="cars" name="name" required>
+	<select id="cars" name="cars" required>
 		<option value="">--Please choose an option--</option>
 		<option value="ford">Ford</option>
 		<option value="bmw">BMW</option>
@@ -41,7 +41,7 @@
 	<br><br>
 	
     <label for="dob">DOB:</label>
-	<input type="Date" id="dob" name="dob" required>
+	<input type="date" id="dob" name="dob" required>
 	<br><br>
 
 	<label for="tel">Phone Number</label>
@@ -53,8 +53,9 @@
 	<br><br>
 
 	<label for="tos">I agree to the TOS</label>
-	<input type="checkbox" id="tos" required>
+	<input type="checkbox" id="tos" name="tos" required>
     <br> <br>
 	<button type="submit">Submit</button>
 </form>
+</body>
 </html>
